@@ -42,7 +42,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   width: 100%;
-  overflow-x: clip;
+  overflow-x: hidden;
 
   /* запрет авто-масштабирования текста */
   -webkit-text-size-adjust: 100%; /* Safari, iOS */
@@ -87,7 +87,7 @@ body {
   text-align: left;
   background: #fff;
   width: 100%;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus {
@@ -8702,12 +8702,16 @@ h5,
 }
 .hero {
   position: relative;
-  min-height: 100vh;
-  min-height: -webkit-fill-available; /* фикс для iPhone Safari */
+  min-height: 100vh; /* лучше min-height, чем height */
+  min-height: -webkit-fill-available;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden; /* гарантируем, что ничего не вылезет */
 }
 
 
