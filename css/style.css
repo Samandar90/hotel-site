@@ -8702,15 +8702,14 @@ h5,
 }
 .hero {
   position: relative;
-  min-height: 100vh; /* лучше min-height, чем height */
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* фикс для iPhone Safari */
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  overflow: hidden; /* гарантируем, что ничего не вылезет */
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
+
 
 .hero .overlay {
   position: absolute;
