@@ -8700,11 +8700,11 @@ h5,
   font-size: 20px;
   text-transform: uppercase;
 }
+
+
 .hero {
   position: relative;
   min-height: 100vh; /* лучше min-height, чем height */
-  min-height: -webkit-fill-available;
-  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -8713,7 +8713,6 @@ h5,
   color: #fff;
   overflow: hidden; /* гарантируем, что ничего не вылезет */
 }
-
 
 .hero .overlay {
   position: absolute;
@@ -8751,6 +8750,7 @@ h5,
   text-shadow: 0 0 15px rgba(251, 191, 36, 0.55);
   animation: slider-text-gradient 6s linear infinite;
 }
+
 
 .hero .content p {
   font-size: 18px;
