@@ -8706,7 +8706,6 @@ h5,
   position: relative;
   min-height: 100vh; /* лучше min-height, чем height */
   background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
