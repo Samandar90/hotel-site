@@ -1,3 +1,4 @@
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -32,27 +33,25 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
-
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto; 
-  /* запрет авто-масштабирования текста */
-  -webkit-text-size-adjust: 100%; /* Safari, iOS */
-  text-size-adjust: 100%; /* современные браузеры */
-  -ms-text-size-adjust: 100%; /* старый IE/Edge */
-
-  -ms-overflow-style: scrollbar; /* IE */
-  -webkit-tap-highlight-color: transparent; /* убирает подсветку при тапе на iOS */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #111827;
+  line-height: 1.6;
+  overflow-x: hidden; /* без горизонтальной прокрутки */
+  background: #ffffff;
 }
 
+[data-aos] {
+  max-width: 100% !important;
+}
 
 
 
