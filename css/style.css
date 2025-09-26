@@ -43,7 +43,7 @@ html {
   line-height: 1.15;
   width: 100%;
   overflow-x: hidden;
-
+  overflow-y: auto; 
   /* запрет авто-масштабирования текста */
   -webkit-text-size-adjust: 100%; /* Safari, iOS */
   text-size-adjust: 100%; /* современные браузеры */
@@ -85,6 +85,7 @@ body {
   background: #fff;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: auto; 
 }
 
 [tabindex="-1"]:focus {
@@ -8702,6 +8703,7 @@ h5,
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -8713,9 +8715,11 @@ h5,
 
 .hero .overlay {
   position: absolute;
-  inset: 0; /* заменяет top/left/right/bottom */
+  
   background: rgba(0, 0, 0, 0.45); /* один раз */
   z-index: 1;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
 }
 
 .hero .container {
