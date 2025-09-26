@@ -53,10 +53,7 @@ html {
   -webkit-tap-highlight-color: transparent; /* убирает подсветку при тапе на iOS */
 }
 
-[data-aos] {
-  max-width: 100%;
- 
-}
+
 
 
 @-ms-viewport {
@@ -8704,7 +8701,8 @@ h5,
 
 .hero {
   position: relative;
-  heght: 650px;
+  min-height: 100vh;
+  background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
